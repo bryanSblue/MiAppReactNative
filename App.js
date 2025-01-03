@@ -1,11 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View, Image } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>And here we go! Y AQUÍ VAMOS HIJUESUPUTAMADREEEEEEEEEEE</Text>
-      <StatusBar style="auto" />
+      <Image
+        source={{
+          uri: "https://image.api.playstation.com/cdn/UP0006/CUSA00110_00/VaulrBDwbGorU7Ykfjg5sNrJ5X9resKm.png",
+        }}
+        style={{ width: 200, height: 200 }}
+        resizeMode="cover"
+      />
+      <Text style={{ color: "yellow" }}>BATTLEFIELD 4</Text>
+      <StatusBar style="light" />
     </View>
   );
 }
@@ -13,8 +20,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#000",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
